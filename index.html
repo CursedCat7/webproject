@@ -113,8 +113,28 @@
 						<!-- 지질 -->
 							<article id="about">
 								<h2 class="major">지질</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<span class="image main"><img src="images/dokdo_ES.jpeg" alt="" /></span>
+								<h2 class="major">형성</h2>
+								<p>해저 약 2000m에서 솟은 용암이 굳어져 형성된 화산섬으로, 신생대 3기 플라이오세 전기부터 후기, 약 460만년 전부터 250만년 전 사이에 생성되었다.
+									울릉도가 약 250만년 전부터 생성된 것에 비해 약 200만년 앞선다고 봐야 한다.</p>
+								
+								<h2 class="major">지형</h2>
+								<p>독도는 동도와 서도인 2개 바위섬과 주위의 약89개 바위와 암초로 이루어져 있으며, 지목은 임야 와 대지, 잡종지이며 101필지에 면적은 187,554㎡이다.
+									독도의 대표적인 섬인 동도와 서도는 폭 151m의 얕은 물길을 사이에 두고 나뉘어져 있다.</p>
+								
+								<h2 class="major">동도</h2>
+								<p>동도는 최고봉 98.6m로 북쪽에 2개의ㅐ 화산흔적이 있으며, 정상에 비교적 평탄한 부분이 있다. 해안은 10∼20m의 단애를 이루고 있으나, 비교적 완만한 경사를 이루고 있다. 섬의 동쪽 끝부분에 깊이가 100m 정도 되는 컵모양의 분화구가 있는데, 분화구에서 바다까지 바닷물이 왕래하는 동굴(천장굴) 두개가 있어 호수를 이루고 있다.
+									경사면에는 부분적으로 20∼30㎝ 두께의 토양이 지표를 형성하고 있다.</p>
+
+								<h2 class="major">서도</h2>
+								<p>서도는 최고봉 168.5m로 산정이 뾰족한 원뿔형이다. 독도의 여러 섬 가운데 가장 높고, 가장 넓다.
+									경사가 가파른 하나의 봉우리로 되어있고, 해안 단애에는 많은 동굴이 있다.
+									또한 특이한 점은 북서쪽 해안의 물골 바위틈에서 조금씩 떨어지는 물은 하루 한 드럼 정도의 분량으로 독도에서의 생활에 귀중한 수원으로 활용되고 있다.
+									동·서도간 최단거리는 약 151ｍ이고, 해안선은 5.4㎞ 이다.</p>
+
+								<h2 class="major">지질</h2>
+								<p>화산활동에 의하여 분출된 알칼리성 화산암으로 구성되어 있으며, 암석의 분석결과 현무암과 조면암으로 분석되었다. 토양은 산정상부에서 풍화하여 생성된 잔적토로서 토성은 사질양토이며, 경사 30도 이상의 급격한 평행사면을 이루는 흑갈색 또는 암갈색의 토양이다.
+									토심은 깊은 곳이 60㎝ 이상인 곳도 있으나 대부분 30㎝ 미만으로, 토양입자가 식물뿌리에 밀착되어 있어 토양유실의 가능성은 낮으나 서도의 일부 노출된 토양의 경우 토양유실현상이 관찰되고 있다.</p>
 							</article>
 
 						<!-- 생태 -->
@@ -375,7 +395,7 @@
 
 		<!-- BG -->
 			<div id="bg">
-				<div id="dvImage" style="height: 100%; width: 100%"></div>
+				<!-- <div id="dvImage" style="height: 100%; width: 100%"></div> -->
 			</div>
 
 		<!-- Scripts -->
@@ -388,13 +408,13 @@
 				var images = ["bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg", "bg6.jpg", "bg7.jpg", "bg8.jpg", "bg9.jpg", "bg10.jpg", "bg11.jpg", "bg12.jpg", "bg13.jpg"];
 				$(function () {
 					var i = 0;
-					$("#dvImage").css("background-image", "url(images/" + images[i] + ")");
+					$("#bg").css("background-image", "url(images/" + images[i] + ")");
 					setInterval(function () {
 						i++;
 						if (i == images.length) {
 							i = 0;
 						}
-						$("#dvImage").fadeOut("slow", function () {
+						$("#bg").fadeOut("slow", function () {
 							$(this).css("background-image", "url(images/" + images[i] + ")");
 							$(this).fadeIn("slow");
 						});
